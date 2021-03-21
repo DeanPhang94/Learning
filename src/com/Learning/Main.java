@@ -20,7 +20,7 @@ public class Main {
         int numberOfPayment = period*monthOfYear;
         double mortgage = (Principle*monthlyRate*Math.pow((1+monthlyRate),numberOfPayment))/(Math.pow((1+monthlyRate),numberOfPayment)-1);
         NumberFormat currency = NumberFormat.getCurrencyInstance();
-        //System.out.println(mortgage);
+        System.out.println(mortgage);
         System.out.println("Mortgage:"+currency.format(mortgage));
     }
 }
